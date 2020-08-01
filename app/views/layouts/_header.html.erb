@@ -5,8 +5,8 @@
   <div class="de-header3">
     <div class="de-header3-search">
       <div class="de-header3-search2">
-        <%= form_tag(search_path(:keyword), method: :get, enforce_utf8: false) do %>
-          <%= text_field_tag :keyword, "", class: 'input-keyword', placeholder: "キーワードで検索　ex. 日本酒・英会話", required: :true %>
+        <%= form_tag(search_index_path(), method: :get, enforce_utf8: false) do %>
+          <%= text_field_tag :keyword, "", class: 'input-keyword', placeholder: "キーワードで検索  ex. 日本酒・英会話", required: :true %>
           <%= submit_tag '探す', class: 'search-btn', name: nil %>
         <% end %>
       </div>
